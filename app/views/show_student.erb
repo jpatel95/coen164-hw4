@@ -1,0 +1,10 @@
+<h1><%= @student.name %></h1>
+<p> Release Date: <%= @student.birthday.strftime("%e %B %Y") if @student.birthday %></p>
+<p> Age: <%= @student.age %></p>
+<pre><%= @student.quote %></pre>
+<p> <a href="/students">back to students index</a></p>
+<p> <a href="/students/<%= @student.id %>/edit">edit this student</a></p>
+<form action="/students/<%= @student.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE"/>
+  <input type="submit" value="delete this student"/>
+</form>
