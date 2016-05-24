@@ -1,6 +1,6 @@
 <!-- ERB file to display the information of a particular student. -->
 <h1><%= @student.name %></h1>
-<p> Release Date: <%= @student.birthday.strftime("%e %B %Y") if @student.birthday %></p>
+<p> Birthday: <%= @student.birthday.strftime("%e %B %Y") if @student.birthday %></p>
 <p> Age: <%= @student.age %></p>
 <pre><%= @student.quote %></pre>
 <p> <a href="/students">back to students index</a></p>
