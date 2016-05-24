@@ -1,3 +1,4 @@
+<!-- ERB code to modify an existing student and invokes the student_form erb to get user input -->
 <h1>Edit Student</h1>
 <form method="POST" action="/students/<%= @student.id %>">
   <input type="hidden" name="_method" value="PUT"/>
